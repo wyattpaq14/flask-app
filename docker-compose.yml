@@ -1,9 +1,12 @@
+version: '3.3'
 services:
-  web:
-    build: "./"
+  flask-app:
+    build: ./
     image: "flask-app:latest"
-    hostname: "flask-app"
+    hostname: flask-app
+    container_name: chicken-coop-server
+    restart: always
     ports:
       - "80:80"
-     volumes:
+    volumes:
       - "./app:/app"
