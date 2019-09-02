@@ -1,6 +1,6 @@
 services:
   web:
-    container_name: "flask-app"
+    container_name: "flask_app"
     build: "./"
     image: "flask-app:latest"
     hostname: "flask-app"
