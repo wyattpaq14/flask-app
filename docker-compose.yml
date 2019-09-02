@@ -4,7 +4,7 @@ services:
     build: ./
     image: "flask-app:latest"
     hostname: flask-app
-    container_name: chicken-coop-server
+    container_name: flask-app
     restart: always
     ports:
       - "80:80"
