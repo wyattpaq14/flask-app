@@ -1,10 +1,10 @@
 services:
-    web:
-        container_name: "flask-app"
-        build: ./
-        image: "flask-app:latest"
-        hostname: "flask-app"
-        ports:
-            - "80:80"
-        volumes:
-            - ./app:/app
+  web:
+    container_name: "flask-app"
+    build: ./
+    image: "flask-app:latest"
+    hostname: "flask-app"
+    ports:
+      - "80:80"
+     volumes:
+      - ./app:/app
