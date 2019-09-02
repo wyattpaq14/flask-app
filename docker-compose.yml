@@ -1,17 +1,5 @@
-<<<<<<< HEAD
-web:
-  container_name: "flask_app"
-  build: "./"
-  image: "flask-app:latest"
-  hostname: "flask-app"
-  ports:
-    - "80:80"
-    volumes:
-    - "./app:/app"
-=======
 services:
   web:
-    container_name: "flask_app"
     build: "./"
     image: "flask-app:latest"
     hostname: "flask-app"
@@ -19,4 +7,3 @@ services:
       - "80:80"
      volumes:
       - "./app:/app"
->>>>>>> 75d4e604e8f7acbf9797679bc0c94a0852148b3e
